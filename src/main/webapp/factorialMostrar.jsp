@@ -9,8 +9,12 @@
 <body>
 
 <h1>
-<%=request.getAttribute("resultadoFactorial") %>
+Resultado factorial:
 </h1>
+<p>
+El resultado Factorial de <%=request.getAttribute("numRef") %>: 
+<%=request.getAttribute("resultadoFactorial")%>
+</p>
 
 </body>
 </html>

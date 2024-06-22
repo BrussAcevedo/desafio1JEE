@@ -34,6 +34,7 @@ public class ParImpar extends HttpServlet {
 		String respuesta = utilidad.parImparCalc();
 		System.out.println(respuesta);
 		request.setAttribute("resultadoParImpar", respuesta);
+		request.setAttribute("numRef", num);
 		request.getRequestDispatcher("parImparMostrar.jsp").forward(request, response);	
 	}
 

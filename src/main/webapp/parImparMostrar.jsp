@@ -9,7 +9,12 @@
 </head>
 <body>
 <h1>
-<%=request.getAttribute("resultadoParImpar")%>
+Resultado Par/Impar:
 </h1>
+<p>
+El numero <%= request.getAttribute("numRef") %> es: <%=request.getAttribute("resultadoParImpar")%>
+</p>
+
+
 </body>
 </html>

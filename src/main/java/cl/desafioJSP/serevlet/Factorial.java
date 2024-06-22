@@ -33,6 +33,7 @@ public class Factorial extends HttpServlet {
 		Utilidad utilidad = new Utilidad(num);
 		int factorialRespuesta = utilidad.factorialCalc();
 		
+		request.setAttribute("numRef", num);		
 		request.setAttribute("resultadoFactorial", factorialRespuesta);
 		request.getRequestDispatcher("factorialMostrar.jsp").forward(request, response);
 		
